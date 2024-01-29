@@ -1,0 +1,162 @@
+/* Reset des styles par défaut du navigateur */
+body, h1, h2, p, ul, li, address, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Blanc cassé pour le fond */
+    color: #333;
+}
+
+.banner-header {
+    background-image: url("baniere.jpg"); /* Remplacez 'chemin_votre_image.jpg' par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Couleur du texte pour assurer la lisibilité */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ajoutez cette règle pour un fond noir à la barre de recherche */
+.navbar {
+    background-color: #000; /* Fond noir */
+    border: none;
+}
+
+/* Ajoutez ces règles pour rendre les liens blancs et sans soulignement */
+.navbar a {
+    display: block;
+    color: #fff; /* Couleur blanche du texte des liens */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Couleur de fond au survol des liens */
+}
+
+/* Ajoutez cette règle pour enlever le soulignement par défaut des liens */
+.navbar a {
+    text-decoration: none;
+}
+
+
+/* Ajoutez cette règle pour centrer les éléments de la barre de navigation */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block; /* Utilisez display: inline-block pour mettre les éléments côte à côte */
+    margin-bottom: 0px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+} 
+
+#images img {
+    display: block;
+    margin: 0 auto; /* Centre l'image horizontalement */
+    max-width: 50%;
+    height: auto;
+    border-radius: 30px; /* Coins légèrement arrondis pour les images */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333; /* Gris foncé pour le pied de page */
+    color: #fff;
+}
+
+/* Effet de survol pour les images */
+.hoverable:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Ajoutez cette règle pour centrer le texte de la section */
+#fonctionnalites {
+    text-align: center;
+}
+
+#fonctionnalites ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#creators {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.creator-description {
+    display: flex;
+    flex-direction: column; /* Organiser les éléments en colonne */
+    align-items: center;
+    width: calc(50% - 20px); /* Largeur de chaque bloc avec une marge de 20px entre eux */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.creator-photo, .logo {
+    max-width: 100%;
+    width: 150px; /* largeur + (2 * différence) */
+    height: 150px; /* hauteur + (2 * différence) */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .creator-description {
+        width: 100%; /* En plein écran, chaque bloc occupe toute la largeur */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
