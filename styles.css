@@ -74,7 +74,7 @@ h2 {
 }
 
 p {
-    text-align: center;
+    text-align: justify;
 }
 
 section {
@@ -151,10 +151,22 @@ footer {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.texte_contact {
+    text-align: center;
+}
+
+address {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .creator-description {
         width: 100%; /* En plein écran, chaque bloc occupe toute la largeur */
     }
+}
+
+.footer-text {
+    text-align: center;
 }
 
 html {
